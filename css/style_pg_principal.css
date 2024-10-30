@@ -13,6 +13,7 @@ body {
     width: 100vw;
     height: 100vh;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 main {
@@ -25,6 +26,14 @@ main {
 /*cabeçalho*/
 header>img {
     width: 92px;
+}
+
+header h1 {
+    font-size: 75px;
+    text-transform: uppercase;
+    font-family: fantasy;
+    letter-spacing: 1px;
+    font-weight: 500;
 }
 
 header>nav>ul {
@@ -88,22 +97,23 @@ strong {
     text-align: center;
     font-size: 70px;
     color: rgb(0, 255, 0);
+    font-family: fantasy;
+    font-weight: 400;
 }
 
 .skills {
     display: flex;
+    justify-content: space-between;
     position: relative;
-    padding: 8%;
 }
 
 .card {
     text-align: center;
-    width: 200px;
+    width: 300px;
     height: 300px;
-    background-color: rgb(255, 255, 255);
+    box-shadow: 1px 2px 0px 1px green;
     position: relative;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     border-radius: 10px;
@@ -111,7 +121,7 @@ strong {
 }
 
 .cards>h3 {
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     font-size: 30px;
 }
 
@@ -122,12 +132,13 @@ strong {
     text-align: center;
 
 }
-.soft-skills >h2{
+
+.soft-skills>h2 {
     position: relative;
-    font-size: 45px;
-    padding:10px;
+    font-size: 50px;
+    padding: 10px;
     padding: 0.1%;
-    margin-bottom:5%;
+    margin-bottom: 5%;
 }
 
 .soft-skills>ul {
@@ -154,4 +165,73 @@ strong {
     text-align: center;
 }
 
-/**/
+/*fim de custom*/
+/*Inicio da sesao de projetos*/
+#grid {
+    width: auto;
+    position: relative;
+}
+
+.main-projetos h2 {
+    color: hwb(120 0% 0%);
+    font-size: 65px;
+    font-family: fantasy;
+    letter-spacing: 1px;
+    font-weight: 400;
+    text-align: center;
+    padding: 2px;
+    margin: 50px;
+}
+
+.card-projetos img {
+    width: 98%;
+    border-radius: 5%;
+}
+
+.card-projetos {
+    text-align: center;
+    padding: 5px;
+    font-size: 20px;
+    font-family: fantasy;
+    border-radius: 5%;
+    box-shadow: 1px 1px 1px 0px green;
+    text-transform: capitalize;
+
+}
+
+.card-projetos button {
+    width: 50%;
+    color: black;
+    background-color: rgb(255, 255, 255);
+    margin: 10px;
+    padding: 10px;
+    font-family: fantasy;
+    font-size: 20px;
+    border-radius: 20px;
+}
+
+.card-projetos li {
+    padding: 10px;
+    list-style: none;
+
+}
+
+.display-cards {
+    position: relative;
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    left: 4%;
+    gap: 7%;
+
+}
+
+.display-cards span {
+    color: aquamarine;
+}
+footer{
+    width: 100%;
+    height: auto;
+    position: relative;
+}
