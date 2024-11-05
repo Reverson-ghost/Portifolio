@@ -1,1 +1,63 @@
-/*Cards animações*/
+/*scrolls*/
+/* Estiliza a largura e aparência da barra de rolagem */
+::-webkit-scrollbar {
+  width: 2px;
+  background-color: #f1f1f1;
+  /* Cor do trilho da barra */
+}
+
+/* Estiliza o "thumb" (a parte que se move) */
+::-webkit-scrollbar-thumb {
+  background-color: #00ff00;
+  /* Cor preta com 70% de opacidade */
+  border-radius: 5px;
+}
+
+/* Adiciona um efeito ao passar o mouse */
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(0, 0, 0, 0.9);
+  /* Aumenta a opacidade ao passar o mouse */
+}
+
+/*animação gradiente textos*/
+.gradient-text {
+  background: linear-gradient(90deg, #ff6f61, #4da8da, #5bc0de);
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: gradientAnimation 5s infinite linear;
+  background-size: 200%;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0%;
+  }
+
+  100% {
+    background-position: 100%;
+  }
+}
+/*animação para mudar cor*/
+.color-change {
+  animation: colorAnimation 30s infinite alternate;
+}
+
+@keyframes colorAnimation {
+  0% { color: #52da4d; }
+  50% { color: #000000; }
+  100% { color: #5bde6d; }
+}
+/*animação de pulse*/
+.pulse {
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { color: #4da8da; }
+  50% { color: #ff6f61; } 
+}
+/*passar mouse*/
+
+
+
+

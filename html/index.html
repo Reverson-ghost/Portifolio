@@ -12,10 +12,11 @@
         <link
             href="https://fonts.googleapis.com/css2?family=Irish+Grover&family=Smokum&display=swap"
             rel="stylesheet">
-
+        <script defer src="/js/animações/ScrollSuave.js"></script>
+        <script src="/js/animações/passarMouse.js"></script>
     </head>
 
-    <body>
+    <body >
         <main>
             <header>
                 <nav>
@@ -46,8 +47,22 @@
             </section>
             <!--Transição para a proxima sessão-->
             <section>
-                <h1 class="h1-sessao-skills">Habilidades</h1>
-
+                <!--<h1 class="h1-sessao-skills">Habilidades</h1>-->
+                <section>
+                    <div class="div-sobre-mim ">
+                        <div class="div-formacao">
+                            <ul>
+                                <li><strong>Formação:</strong> Desenvolvimento
+                                    Web
+                                    Full Stack</li>
+                                <li><strong>Ferramentas:</strong> HackerRank,
+                                    Codecademy, LeetCode</li>
+                                <li><strong>Especialidades:</strong> SEO, UX/UI
+                                    Design</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
                 <div class="skills">
                     <!--Para criar o proximo card-->
                     <!--Javascript-->
@@ -93,14 +108,15 @@
             <!--Sessao de Projetos-->
             <section>
                 <div class="main-projetos">
-                    <h2>Projetos</h2>
+                    <!--h2 >Projetos</h2>-->
+
                     <!---->
                     <div id="grid">
                         <div class="display-cards">
                             <div class="card-projetos">
                                 <ul>
                                     <img
-                                        src="/img/Cat Staring At The Starry Night.jpeg"
+                                        src="https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg"
                                         alt>
                                     <li><span>Nome:</span> Gatinho </li>
                                     <li><span>data:</span>27/05/2001</li>
@@ -113,7 +129,7 @@
                             <div class="card-projetos">
                                 <ul>
                                     <img
-                                        src="/img/Cat Staring At The Starry Night.jpeg"
+                                        src="https://images.pexels.com/photos/177598/pexels-photo-177598.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                                         alt>
                                     <li><span>Nome:</span> Gatinho </li>
                                     <li><span>data:</span> 19/09/2001</li>
@@ -126,7 +142,7 @@
                             <div class="card-projetos">
                                 <ul>
                                     <img
-                                        src="/img/Cat Staring At The Starry Night.jpeg"
+                                        src="https://images.pexels.com/photos/57007/pexels-photo-57007.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                                         alt>
                                     <li><span>Nome:</span> Gatinho </li>
                                     <li><span>data:</span> 19/09/2001</li>
@@ -139,7 +155,7 @@
                             <div class="card-projetos">
                                 <ul>
                                     <img
-                                        src="/img/Cat Staring At The Starry Night.jpeg"
+                                        src="https://images.pexels.com/photos/267350/pexels-photo-267350.jpeg"
                                         alt>
                                     <li><span>Nome:</span> Gatinho </li>
                                     <li><span>data:</span> 19/09/2001</li>
@@ -153,34 +169,185 @@
                     </div>
                 </div>
             </section>
-            <!-- Contatos e redes sociais-->
+
+            <!--Serviços que ofereço exibindo em accordion, -->
+            <section>
+                <div class="div-servico-ofertados">
+                    <details>
+                        <summary>
+                            Desenvolvimento de Websites
+                            Personalizados
+                        </summary>
+                        <p>Criamos sites únicos e
+                            responsivos, totalmente adaptados à identidade
+                            visual e aos objetivos do cliente. Utilizamos as
+                            mais modernas tecnologias para garantir desempenho e
+                            compatibilidade em diversos dispositivos.
+                        </p>
+                        <ul>
+                            <li>🛠️ Tecnologias: HTML, CSS, JavaScript,
+                                React
+                            </li>
+                            <li>📈 Foco em SEO e
+                                acessibilidade</li>
+                        </ul>
+                    </details>
+                    <details>
+                        <summary>
+                            Design de Experiência do Usuário (UX) e
+                            Interface (UI)
+                        </summary>
+                        <p>Oferecemos uma
+                            experiência de usuário intuitiva e agradável,
+                            desenvolvendo interfaces que facilitam a navegação e
+                            atendem às necessidades dos usuários.
+                        </p>
+                        <ul>
+                            <li>🔍 Pesquisa de público-alvo e criação de
+                                wireframes</li>
+                            <li>🖥️ Prototipagem e validação
+                                antes do desenvolvimento final</li>
+                        </ul>
+                    </details>
+                    <details>
+                        <summary> Otimização de Sites para
+                            SEO
+                        </summary>
+                        <p>Trabalhamos com técnicas avançadas
+                            de SEO para garantir que seu site seja bem
+                            posicionado nos motores de busca, atraindo mais
+                            tráfego qualificado.</p>
+                        <ul>
+                            <li>🔑 Otimização de
+                                palavras-chave e metadados</li>
+                            <li>⏱️ Melhoria
+                                no tempo de carregamento do site</li>
+                        </ul>
+                    </details>
+                    <details>
+                        <summary>Integração de
+                            E-commerce
+                        </summary>
+                        <p>Implementamos e-commerce com
+                            recursos completos, como carrinho de compras,
+                            métodos de pagamento e segurança para garantir
+                            transações tranquilas e confiáveis.</p>
+                        <ul>
+                            <li>💳
+                                Integração com Shopify, WooCommerce, ou
+                                personalizada</li>
+                            <li>🔐 Funcionalidades de
+                                segurança e criptografia de dados</li>
+                        </ul>
+                    </details>
+                    <details>
+                        <summary>Manutenção e Suporte
+                            Técnico</summary>
+                        <p>Oferecemos suporte contínuo
+                            para manter o site atualizado, seguro e com o melhor
+                            desempenho.</p>
+                        <ul>
+                            <li>🛡️ Monitoramento de
+                                segurança e backups</li>
+                            <li>🔄 Atualizações
+                                regulares de plugins e funcionalidades</li>
+                        </ul>
+                    </details>
+                </div>
+            </section>
+
+            <!--redes sociais-->
             <section>
                 <div>
-                    <div class="login">
-                        <i>Envie sua dúvida abaixo </i>
-                        <input type="text">
-                        <input type="button" value="Enviar"
-                            id="btn-login-enviar">
-                    </div>
-                    <!--redes sociais-->
-                    <nav>
+                    <nav class="rede-sociais">
                         <ul>
                             <!--instagram-->
-                            <li><img
-                                    src="https://img.icons8.com/?size=100&id=Xy10Jcu1L2Su&format=png&color=000000"
-                                    alt srcset> </li>
+                            <li>
+                                <a href>
+                                    <img
+                                        src="https://img.icons8.com/?size=100&id=TSZw5VixabhS&format=png&color=000000"
+                                        alt srcset>
+                                </a>
+                            </li>
                             <!--linkedin-->
-                            <li><img
-                                    src="https://img.icons8.com/?size=100&id=xuvGCOXi8Wyg&format=png&color=000000"
-                                    alt srcset></li>
+                            <li>
+                                <a href>
+                                    <img
+                                        src="https://img.icons8.com/?size=100&id=64154&format=png&color=000000"
+                                        alt srcset>
+                                </a>
+                            </li>
 
-                                 <!--facebook-->
-                            <li><img src="https://img.icons8.com/?size=100&id=13912&format=png&color=000000 F" alt="" srcset=""></li>
+                            <!--facebook-->
+                            <li>
+                                <a href>
+                                    <img
+                                        src="https://img.icons8.com/?size=100&id=64151&format=png&color=000000"
+                                        alt srcset>
+                                </a>
+                            </li>
                         </ul>
                     </nav>
 
                 </div>
             </section>
+            <!--Contatos 
+            <section>
+                <div class="div-contatos">
+                    <ul>
+                        <li>
+                            <img
+                                src="https://img.icons8.com/?size=100&id=108806&format=png&color=000000"
+                                alt srcset>
+                            <span><a
+                                    href>reversonmello8@gmail.com</a></span>
+                        </li>
+                        <li>
+                            <img
+                                src="https://img.icons8.com/?size=100&id=118557&format=png&color=000000"
+                                alt>
+                            <span> <a href>meu link do git</a></span>
+                        </li>
+                        <li>
+
+                            <img
+                                src="https://img.icons8.com/?size=100&id=108636&format=png&color=000000"
+                                alt>
+                            <span> <a href>(62) 9 9951-7550 </a></span>
+
+                        </li>
+                        <li>
+                            <img
+                                src="https://img.icons8.com/?size=100&id=112164&format=png&color=000000"
+                                alt>
+                            <span><a href>link do telegram</a></span>
+                        </li>
+                    </ul>
+                </div>
+            </section> -->
+
+            <footer>
+                <div class="contato">
+                    <p>Email: reversonmello8@gmail.com</p>
+                    <p>Telefone: +55 (62) 99951-7550</p>
+                </div>
+                <div class="redes-sociais">
+                    <a href="https://linkedin.com/in/seuperfil">LinkedIn</a> |
+                    <a href="https://github.com/seuusuario">GitHub</a>
+                </div>
+                <nav>
+                    <a href="#sobre">Sobre</a> |
+                    <a href="#projetos">Projetos</a> |
+                    <a href="#contato">Contato</a>
+                </nav>
+                <p>&copy; 2024 Reverson Mello. Todos os direitos reservados.</p>
+                <a href="/politica-de-privacidade">Política de Privacidade</a> |
+                <a href="/termos-de-uso">Termos de Uso</a>
+                <p>Desenvolvendo experiências digitais para impulsionar
+                    ideias.</p>
+                <button onclick="window.scrollTo(0, 0)">Voltar ao Topo</button>
+            </footer>
+
         </main>
     </body>
 

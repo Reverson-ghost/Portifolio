@@ -19,8 +19,7 @@ body {
 main {
     position: relative;
     width: 100%;
-    background-color: rgb(0, 0, 0);
-
+    background: black;
 }
 
 /*cabeçalho*/
@@ -43,18 +42,26 @@ header>nav>ul {
     list-style: none;
     align-items: center;
     padding: 3%;
-    color: white;
     width: 65%;
-    font-size: 17px;
-    left: 5%;
+    left: 10%;
 }
 
 header>nav>ul>li {
+    font-size: 25px;
+    font-family: fantasy;
+    letter-spacing: 1px;
+    font-weight: 400;
     padding: 10px;
+    color:aquamarine;
+    box-shadow: 0px 1px 0px 0px #9be99b;
 }
 
 .inicio {
     display: flex;
+    background-image: url("/img/background/Fundo\ 1\ topo.svg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .intro {
@@ -67,12 +74,12 @@ header>nav>ul>li {
 }
 
 .intro>h1 {
-    color: hwb(120 0% 0%);
+    color:aquamarine;
     font-size: 96px;
 }
 
 strong {
-    color: rgb(3, 255, 3);
+    color:rgba(127, 255, 212, 0.664);
 }
 
 .intro>p {
@@ -105,19 +112,21 @@ strong {
     display: flex;
     justify-content: space-between;
     position: relative;
+    top: 10px;
 }
 
 .card {
     text-align: center;
     width: 300px;
     height: 300px;
-    box-shadow: 1px 2px 0px 1px green;
+    box-shadow: 1px 1px 0px 1px rgba(58, 155, 39, 0.329);
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 10px;
     margin: 2%;
+    
 }
 
 .cards>h3 {
@@ -152,7 +161,7 @@ strong {
 .soft-skills>ul>li {
     list-style: none;
     border: 1px;
-    box-shadow: 1px 1px 1px 1px rgb(0, 255, 0);
+    box-shadow: 1px 0px 0px 1px rgb(0, 255, 0);
     width: 250px;
     height: 50px;
     margin: 15px;
@@ -173,8 +182,8 @@ strong {
 }
 
 .main-projetos h2 {
-    color: hwb(120 0% 0%);
-    font-size: 65px;
+    color: #08e652d5;
+    font-size: 60px;
     font-family: fantasy;
     letter-spacing: 1px;
     font-weight: 400;
@@ -224,14 +233,200 @@ strong {
     align-items: center;
     left: 4%;
     gap: 7%;
+    top: 100px;
 
 }
 
 .display-cards span {
     color: aquamarine;
 }
-footer{
+
+.rede-sociais {
     width: 100%;
-    height: auto;
     position: relative;
+    top: 50px
+}
+
+.rede-sociais ul {
+    display: flex;
+    justify-content: center;
+    padding: 5%;
+    gap: 10%;
+}
+
+.rede-sociais li {
+    list-style: none;
+}
+
+.rede-sociais img {
+    display: flex;
+    float: left;
+    width: 80px;
+}
+
+.div-contatos {
+    background-color: black;
+    font-size: 20px;
+    position: relative;
+    left: 5%;
+    width: 50%;
+}
+
+.div-contatos img {
+    width: 80px;
+}
+
+.div-contatos li {
+    list-style: none;
+    font-size: 25px;
+}
+
+.div-contatos a {
+    font-family: fantasy;
+    position: relative;
+    bottom: 20px;
+    color: aquamarine;
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+
+/* custons da area de serviços oferecidos*/
+.div-servico-ofertados {
+
+    top: 70px;
+    width: 95%;
+    left: 2%;
+    padding: 5px;
+    position: relative;
+    display: flex;
+    text-align: center;
+    gap: 5px;
+    margin-top: 5%;
+}
+
+details {
+
+    box-shadow: 1px 1px 0px 1px rgba(0, 128, 0, 0.363);
+    padding: 5px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+details[open] {
+    max-height: 200px;
+    /* altura máxima */
+    overflow-y: auto;
+}
+
+summary {
+    font-weight: bold;
+    cursor: pointer;
+    color: aquamarine;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.div-servico-ofertados p {
+    text-transform: capitalize;
+}
+
+.div-servico-ofertados li {
+    list-style: none;
+    color: aquamarine;
+}
+
+/*Div de formação */
+.div-formacao {
+    position: relative;
+    width: 100%;
+}
+
+.div-formacao ul {
+    width: 90%;
+    top: 5px;
+    margin: 2%;
+    position: relative;
+    left: 4%;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.div-formacao li {
+    list-style: none;
+    font-size: 22px;
+    font-family: fantasy;
+    letter-spacing: 1px;
+}
+
+.div-formacao strong {
+    color: aquamarine;
+}
+
+/* Estilo básico do footer */
+footer {
+    background-color: #000000;
+    /* Fundo escuro para contraste */
+    color: #f1f1f1;
+    /* Texto claro para visibilidade */
+    padding: 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilização dos links */
+footer a {
+    color: aquamarine;
+    /* Cor para links */
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+footer a:hover {
+    color: #fff;
+    /* Cor ao passar o mouse */
+    text-decoration: underline;
+}
+
+/* Layout e estilo das seções */
+footer .contato, footer .redes-sociais, footer nav {
+    margin: 15px 0;
+}
+
+/* Formatação do copyright e do slogan */
+footer p {
+    margin: 10px 0;
+    font-size: 14px;
+}
+
+/* Estilo do botão "Voltar ao Topo" */
+footer button {
+    background-color: aquamarine;
+    color: #222;
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+footer button:hover {
+    background-color: #333;
+    color: #f1f1f1;
+}
+
+/* Responsividade para footers em telas menores */
+@media (max-width: 768px) {
+    footer {
+        text-align: left;
+        padding: 20px 15px;
+    }
+
+    footer .contato, footer .redes-sociais, footer nav {
+        margin: 10px 0;
+    }
 }
