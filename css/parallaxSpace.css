@@ -1,0 +1,35 @@
+/* styles.css */
+  
+  .parallax {
+    position: relative;
+    width: 100vw;
+    height: 300vh; /* Altura para rolagem longa */
+    overflow: hidden;
+  }
+  
+  .layer {
+    position: fixed;
+    width: 200%;
+    height: 200%;
+    top: 0;
+    left: 0;
+    background-repeat: repeat;
+    background-size: cover;
+    transform: translateZ(0);
+  }
+  
+  .layer-back {
+    background-image: url('https://example.com/stars-background.png'); /* Fundo com estrelas pequenas */
+    z-index: 1;
+  }
+  
+  .layer-middle {
+    background-image: url('https://example.com/nebula-background.png'); /* Fundo com nebulosas */
+    z-index: 2;
+  }
+  
+  .layer-front {
+    background-image: url('https://example.com/planet-foreground.png'); /* Elementos em destaque (ex.: planeta) */
+    z-index: 3;
+  }
+  
