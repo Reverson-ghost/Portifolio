@@ -3,7 +3,7 @@
     radial-gradient(circle, rgb(78, 121, 110), rgba(0, 0, 0, 0.8)) no-repeat,
     linear-gradient(165deg, #001f3f, #000000) no-repeat; 
     background-blend-mode: overlay;
-    animation: gradientMove 15s ease-in-out infinite;
+    animation: gradientMove 150s ease-in-out infinite;
     background-size: 200% 200%;
 }
 /* Animação para o gradiente se mover lentamente */
