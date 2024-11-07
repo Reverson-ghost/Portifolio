@@ -13,8 +13,10 @@
             href="https://fonts.googleapis.com/css2?family=Irish+Grover&family=Smokum&display=swap"
             rel="stylesheet">
         <link rel="stylesheet" href="/css/parallaxSpace.css">
+        <link rel="stylesheet" href="/css/efeitos.css">
         <script defer src="/js/animações/ScrollSuave.js"></script>
-        <script src="/js/animações/passarMouse.js"></script>
+        <script src="/js/animações/scrollReveal.js"></script>
+        <script src="/js/animações/ampliarImagem.js"></script>
     </head>
 
     <body>
@@ -23,24 +25,27 @@
                 <nav>
                     <ul>
                         <h1>mello</h1>
-                        <li>Inicio</li>
-                        <li>Habilidades</li>
-                        <li>Projetos</li>
-                        <li>Contato</li>
+                        <li class="button">Inicio</li>
+                        <li class="button">Habilidades</li>
+                        <li class="button">Projetos</li>
+                        <li class="button">Contato</li>
                     </ul>
                 </nav>
             </header>
             <section class="inicio">
                 <div class="intro">
                     <h3>Olá eu Sou </h3>
-                    <h1>Réverson</h1>
+                    <h1 class>Réverson</h1>
                     <h3>Bem-vindo ao meu <strong>Portifólio</strong></h3>
-                    <p>Sou um apaixonado por tecnologia com habilidades sólidas
-                        em <strong>Desenvolvimento web</strong>, Ao
+                    <p class="text-shadow">Sou um apaixonado por tecnologia com
+                        habilidades sólidas
+                        em <strong class="glow-effect">Desenvolvimento
+                            web</strong>, Ao
                         longo dos anos,
                         tenho
                         trabalhado arduamente para aprimorar minhas
-                        <strong>habilidades</strong> e oferecer soluções
+                        <strong class="glow-effect">habilidades</strong> e
+                        oferecer soluções
                         criativas e eficientes
                         para
                         meus clientes e projetos.</p>
@@ -48,7 +53,6 @@
             </section>
             <!--Transição para a proxima sessão-->
             <section>
-                <!--<h1 class="h1-sessao-skills">Habilidades</h1>-->
                 <section>
                     <div class="div-sobre-mim ">
                         <div class="div-formacao">
@@ -64,40 +68,39 @@
                         </div>
                     </div>
                 </section>
-                <div class="skills">
+                <div class="skills ">
                     <!--Para criar o proximo card-->
                     <!--Javascript-->
-                    <div class="card">
-                        <div class="cards">
+                    <div class="card border-animate card-elevation">
+                        <div class="cards zoom-image">
                             <img src="/img/js_5968292.png" alt>
                             <h3>JAVASCRIPT</h3>
                         </div>
                     </div><!--finalizar o card desejado-->
                     <!--Html-->
-                    <div class="card">
-                        <div class="cards">
+                    <div class="card border-animate card-elevation">
+                        <div class="cards zoom-image">
                             <img src="/img/html-5_732212.png" alt>
                             <h3>HTML5</h3>
                         </div>
                     </div>
                     <!---->
-                    <!--css-->
-                    <div class="card">
-                        <div class="cards">
+                    <div class="card border-animate card-elevation">
+                        <div class="cards zoom-image">
                             <img src="/img/social_11516361.png" alt>
                             <h3>CSS3</h3>
                         </div>
                     </div>
                     <!---->
-                    <div class="card">
-                        <div class="cards">
+                    <div class="card border-animate card-elevation">
+                        <div class="cards zoom-image">
                             <img src="/img/node-js.png" alt>
                             <h3>NODE JS</h3>
                         </div>
                     </div>
                     <!---->
-                    <div class="card">
-                        <div class="cards">
+                    <div class="card border-animate card-elevation">
+                        <div class="cards zoom-image">
                             <img src="/img/structure_3334886.png" alt>
                             <h3>REACT JS</h3>
                         </div>
@@ -109,21 +112,32 @@
             <!--Sessao de Projetos-->
             <section>
                 <div class="main-projetos">
-                    <!--h2 >Projetos</h2>-->
-
                     <!---->
                     <div id="grid">
                         <div class="display-cards">
                             <div class="card-projetos">
                                 <ul>
-                                    <img
-                                        src="https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg"
-                                        alt>
+                                    <div class="image-container ">
+                                        <img
+                                            src="https://i.pinimg.com/564x/82/12/9a/82129aa1b4fb6cdd42bd585b3f28e1c1.jpg"
+                                            alt="Imagem do Projeto"
+                                            class="thumbnail"
+                                            onclick="expandImage(this)">
+                                    </div>
+                                    <!-- Contêiner da imagem ampliada -->
+                                    <div class="overlay" id="overlay"
+                                        onclick="closeImage()">
+                                        <img src alt="Imagem Ampliada"
+                                            id="expandedImage">
+                                    </div>
                                     <li><span>Nome:</span> Gatinho </li>
                                     <li><span>data:</span>27/05/2001</li>
                                     <li><span>Tecnologia:</span> Html, css,
                                         javascript</li>
-                                    <button type="button">Ver projeto</button>
+                                    <button type="button"
+                                        class="btn-projetos">Ver
+                                        projeto</button>
+
                                 </ul>
                             </div>
                             <!---->
@@ -136,20 +150,26 @@
                                     <li><span>data:</span> 19/09/2001</li>
                                     <li><span>Tecnologia:</span> Html, css,
                                         javascript</li>
-                                    <button type="button">Ver projeto</button>
+                                    <button type="button"
+                                        class="btn-projetos">Ver
+                                        projeto</button>
                                 </ul>
                             </div>
                             <!---->
                             <div class="card-projetos">
                                 <ul>
-                                    <img
-                                        src="https://images.pexels.com/photos/57007/pexels-photo-57007.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                                        alt>
+                                    <div class="image-container">
+                                        <img
+                                            src="https://images.pexels.com/photos/57007/pexels-photo-57007.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                            alt> </div>
+
                                     <li><span>Nome:</span> Gatinho </li>
                                     <li><span>data:</span> 19/09/2001</li>
                                     <li><span>Tecnologia:</span> Html, css,
                                         javascript</li>
-                                    <button type="button">Ver projeto</button>
+                                    <button type="button"
+                                        class="btn-projetos">Ver
+                                        projeto</button>
                                 </ul>
                             </div>
                             <!---->
@@ -162,7 +182,9 @@
                                     <li><span>data:</span> 19/09/2001</li>
                                     <li><span>Tecnologia:</span> Html, css,
                                         javascript</li>
-                                    <button type="button">Ver projeto</button>
+                                    <button type="button"
+                                        class="btn-projetos">Ver
+                                        projeto</button>
                                 </ul>
                             </div>
                         </div>

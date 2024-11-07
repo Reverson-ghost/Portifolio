@@ -1,0 +1,179 @@
+/*hover*/
+.button {
+    background-color: aquamarine;
+    color: #000000;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    transition: transform 1s, box-shadow 0.3s;
+}
+
+.button:hover {
+    transform: scale(1.25);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3), 0px 2px 0px 1px rgba(60, 255, 0, 0.568);
+}
+
+/*efeito de passar mouse*/
+.btn-projetos:hover {
+    background-color: #000000;
+    color: aquamarine;
+    transition: 0.5s;
+}
+
+/*fade in */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInAnimation 1s ease-in forwards;
+}
+
+@keyframes fadeInAnimation {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/*texto sombra*/
+
+.text-shadow {
+    font-size: 2rem;
+    color: #aca6a6;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+}
+
+/*EFEITOS PARA CARDS*/
+.border-animate {
+    border: 2px solid transparent;
+    padding: 10px;
+    transition: border-color 0.5s;
+}
+
+.border-animate:hover {
+    border-color: #59b5e7;
+}
+
+/*zoom de imagem */
+.zoom-image {
+    transition: transform 0.3s;
+}
+
+.zoom-image:hover {
+    transform: scale(1.05);
+}
+
+/*scroll reveal*/
+.reveal {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/*glow suave */
+.glow-effect {
+    /* border: 2px solid #4da8da;*/
+    box-shadow: 0px 1px 0px 0px rgba(77, 168, 218, 0.6);
+    transition: box-shadow 0.3s;
+}
+
+.glow-effect:hover {
+    box-shadow: 0px 1px 0px 0px rgba(77, 168, 218, 1);
+}
+
+/*hover de elevação*/
+.card-elevation {
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card-elevation:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/*Gradiente dinamico*/
+.card-gradient {
+    padding: 20px;
+    border-radius: 8px;
+    background: linear-gradient(45deg, #ff6b6b, #f5f5f5);
+    background-size: 200% 200%;
+    animation: gradientAnimation 5s ease infinite;
+    color: #333;
+    transition: transform 0.3s;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/*card destaque de informação*/
+.card-header {
+    background-color: #4da8da;
+    color: #fff;
+    padding: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.card-details {
+    padding: 10px;
+    display: none;
+}
+
+.card:hover .card-details {
+    display: block;
+}
+
+/*efeito para ampliar imagem */
+
+/* Estilo para a imagem pequena (thumbnail) */
+
+
+.image-container .thumbnail:hover {
+    transform: scale(1.05);
+    /* Leve zoom ao passar o mouse */
+}
+
+/* Estilos para o overlay da imagem ampliada */
+.overlay {
+    position: fixed;
+    display: none;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    /* Fundo escurecido */
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+/* Imagem ampliada no centro */
+.overlay img {
+    width: 50%;
+    /* Define a ampliação */
+    max-width: 500px;
+    /* Limite máximo de largura */
+    border-radius: 8px;
+}

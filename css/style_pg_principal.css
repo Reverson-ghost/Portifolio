@@ -92,12 +92,7 @@ strong {
     left: 10%;
 }
 
-.img-intro {
-    width: 376px;
-    position: relative;
-    bottom: 15%;
-    z-index: 1;
-}
+
 
 /* Seção de habilidades*/
 .h1-sessao-skills {
@@ -216,7 +211,7 @@ strong {
     padding: 10px;
     font-family: fantasy;
     font-size: 20px;
-    border-radius: 20px;
+    border-radius: 10px;
 }
 
 .card-projetos li {
