@@ -9,12 +9,6 @@
         'Helvetica Neue', sans-serif
 }
 
-body {
-    box-sizing: border-box;
-    overflow-x: hidden;
-    
-}
-
 main {
     position: relative;
     width: 100%;
@@ -50,11 +44,9 @@ header>nav>ul>li {
     letter-spacing: 1px;
     font-weight: 400;
     padding: 10px;
-    color:aquamarine;
+    color: aquamarine;
     box-shadow: 0px 1px 0px 0px #9be99b;
 }
-
-
 
 .intro {
     position: relative;
@@ -66,12 +58,12 @@ header>nav>ul>li {
 }
 
 .intro>h1 {
-    color:aquamarine;
+    color: aquamarine;
     font-size: 96px;
 }
 
 strong {
-    color:rgba(127, 255, 212, 0.664);
+    color: rgba(127, 255, 212, 0.664);
 }
 
 .intro>p {
@@ -84,8 +76,6 @@ strong {
     left: 10%;
 }
 
-
-
 /* Seção de habilidades*/
 
 .skills {
@@ -93,25 +83,26 @@ strong {
     justify-content: space-between;
     position: relative;
     top: 10px;
+
 }
 
 .card {
     text-align: center;
     width: 300px;
     height: 300px;
-    box-shadow: 1px 1px 0px 1px rgba(58, 155, 39, 0.329);
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 10px;
     margin: 2%;
-    
+
 }
 
 .cards>h3 {
     color: rgb(255, 255, 255);
     font-size: 30px;
+
 }
 
 .soft-skills {
@@ -120,14 +111,6 @@ strong {
     height: 100%;
     text-align: center;
 
-}
-
-.soft-skills>h2 {
-    position: relative;
-    font-size: 50px;
-    padding: 10px;
-    padding: 0.1%;
-    margin-bottom: 5%;
 }
 
 .soft-skills>ul {
@@ -141,7 +124,7 @@ strong {
 .soft-skills>ul>li {
     list-style: none;
     border: 1px;
-    box-shadow: 1px 0px 0px 1px rgb(0, 255, 0);
+    box-shadow: 1px 0px 0px 1px rgb(247, 252, 247);
     width: 250px;
     height: 50px;
     margin: 15px;
@@ -161,17 +144,6 @@ strong {
     position: relative;
 }
 
-.main-projetos h2 {
-    color: #08e652d5;
-    font-size: 60px;
-    font-family: fantasy;
-    letter-spacing: 1px;
-    font-weight: 400;
-    text-align: center;
-    padding: 2px;
-    margin: 50px;
-}
-
 .card-projetos img {
     width: 98%;
     border-radius: 5%;
@@ -183,9 +155,8 @@ strong {
     font-size: 20px;
     font-family: fantasy;
     border-radius: 5%;
-    box-shadow: 1px 1px 1px 0px green;
+    box-shadow: 0px 0px 15px 0px rgba(255, 255, 255, 0.308);
     text-transform: capitalize;
-
 }
 
 .card-projetos button {
@@ -202,7 +173,6 @@ strong {
 .card-projetos li {
     padding: 10px;
     list-style: none;
-
 }
 
 .display-cards {
@@ -341,6 +311,68 @@ summary {
 
 .div-formacao strong {
     color: aquamarine;
+}
+
+/*barra de pesquisa de projetos*/
+/* Contêiner da barra de pesquisa */
+.search-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+    margin: 20px auto;
+    position: relative;
+}
+
+/* Input da barra de pesquisa */
+#searchInput {
+    width: 100%;
+    padding: 10px 40px 10px 15px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    color: #000000;
+    font-family: fantasy;
+    transition: border-color 0.3s;
+}
+
+#searchInput:focus {
+    border-color: #007bff;
+    /* Cor ao focar */
+}
+
+/* Ícone de busca */
+.search-icon {
+    position: absolute;
+    right: 10px;
+    font-size: 18px;
+    color: #776a6a;
+}
+
+/* Estilo dos cards de projeto */
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 10px;
+}
+
+.project-card {
+    width: 100%;
+    max-width: 200px;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
 /* Estilo básico do footer */

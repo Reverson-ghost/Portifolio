@@ -5,4 +5,6 @@ document.querySelectorAll("details").forEach(detail => {
       }
     });
   });
-  
+  /*
+  ajustes para os acordions
+  */

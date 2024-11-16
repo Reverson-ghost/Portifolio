@@ -4,7 +4,9 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
         <title>Portifólio|Réverson Mello</title>
+        
         <link rel="stylesheet" href="/css/style_pg_principal.css">
         <link rel="stylesheet" href="/css/animacoes.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,12 +17,16 @@
         <link rel="stylesheet" href="/css/parallaxSpace.css">
         <link rel="stylesheet" href="/css/efeitos.css">
         <link rel="stylesheet" href="/css/fundo.css">
+        <link rel="stylesheet" href="/css/modal.css">
+
         <script defer src="/js/animações/ScrollSuave.js"></script>
-        <script src="/js/animações/scrollReveal.js"></script>
-        <script src="/js/animações/ampliarImagem.js"></script>
+        <script defer src="/js/animações/pesquisaProjetos.js"></script>
+        <script defer src="/js/modal.js"></script>
+
     </head>
 
     <body>
+
         <main class="fundo">
             <header>
                 <nav>
@@ -33,7 +39,7 @@
                     </ul>
                 </nav>
             </header>
-            <section class="inicio">
+            <section class="inicio ">
                 <div class="intro">
                     <h3>Olá eu Sou </h3>
                     <h1 class>Réverson</h1>
@@ -72,35 +78,35 @@
                 <div class="skills ">
                     <!--Para criar o proximo card-->
                     <!--Javascript-->
-                    <div class="card border-animate card-elevation">
+                    <div class="card  card-elevation">
                         <div class="cards zoom-image">
                             <img src="/img/js_5968292.png" alt>
                             <h3>JAVASCRIPT</h3>
                         </div>
                     </div><!--finalizar o card desejado-->
                     <!--Html-->
-                    <div class="card border-animate card-elevation">
+                    <div class="card card-elevation">
                         <div class="cards zoom-image">
                             <img src="/img/html-5_732212.png" alt>
                             <h3>HTML5</h3>
                         </div>
                     </div>
                     <!---->
-                    <div class="card border-animate card-elevation">
+                    <div class="card  card-elevation">
                         <div class="cards zoom-image">
                             <img src="/img/social_11516361.png" alt>
                             <h3>CSS3</h3>
                         </div>
                     </div>
                     <!---->
-                    <div class="card border-animate card-elevation">
+                    <div class="card  card-elevation">
                         <div class="cards zoom-image">
                             <img src="/img/node-js.png" alt>
                             <h3>NODE JS</h3>
                         </div>
                     </div>
                     <!---->
-                    <div class="card border-animate card-elevation">
+                    <div class="card  card-elevation">
                         <div class="cards zoom-image">
                             <img src="/img/structure_3334886.png" alt>
                             <h3>REACT JS</h3>
@@ -109,7 +115,13 @@
                     <!---->
                 </div>
             </section>
-            <!-- soft skills-->
+            <!-- barra de pesquisa -->
+            <div class="search-container">
+                <input type="text" id="searchInput"
+                    placeholder="Buscar projetos..." />
+                <span class="search-icon">&#128269;</span>
+                <!-- Ícone de lupa -->
+            </div>
             <!--Sessao de Projetos-->
             <section>
                 <div class="main-projetos">
@@ -117,80 +129,48 @@
                     <div id="grid">
                         <div class="display-cards">
                             <div class="card-projetos">
-                                <ul>
-                                    <div class="image-container ">
-                                        <img
-                                            src="https://i.pinimg.com/564x/82/12/9a/82129aa1b4fb6cdd42bd585b3f28e1c1.jpg"
-                                            alt="Imagem do Projeto"
-                                            class="thumbnail"
-                                            onclick="expandImage(this)">
-                                    </div>
-                                    <!-- Contêiner da imagem ampliada -->
-                                    <div class="overlay" id="overlay"
-                                        onclick="closeImage()">
-                                        <img src alt="Imagem Ampliada"
-                                            id="expandedImage">
-                                    </div>
-                                    <li><span>Nome:</span> Gatinho </li>
-                                    <li><span>data:</span>27/05/2001</li>
-                                    <li><span>Tecnologia:</span> Html, css,
-                                        javascript</li>
-                                    <button type="button"
-                                        class="btn-projetos">Ver
-                                        projeto</button>
+                              <ul>
+                                <div class="image-container"
+                                    data-title="Portifólio"
+                                    data-description="Este é um portifólio interativo desenvolvido com HTML, CSS e JavaScript."
+                                    data-features='["Design responsivo", "Galeria de projetos", "Carrossel de imagens"]'
+                                    data-images='["/img/projetos/Captura de tela 2024-11-07 122104.png", "/img/projetos/parte 2.png"]'>
+                                   <img src="/img/projetos/Captura de tela 2024-11-07 122104.png" alt="Imagem do Projeto" class="thumbnail">
+                                </div>
 
-                                </ul>
+                                <li><span>Nome:</span> Portifólio</li>
+                                <li><span>Data:</span> 07/11/2024</li>
+                                <li><span>Tecnologia:</span> HTML, CSS, JavaScript</li>
+                                <button type="button" class="btn-projetos view-more">Ver mais</button>
+                              </ul>
                             </div>
-                            <!---->
-                            <div class="card-projetos">
-                                <ul>
-                                    <img
-                                        src="https://images.pexels.com/photos/177598/pexels-photo-177598.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                                        alt>
-                                    <li><span>Nome:</span> Gatinho </li>
-                                    <li><span>data:</span> 19/09/2001</li>
-                                    <li><span>Tecnologia:</span> Html, css,
-                                        javascript</li>
-                                    <button type="button"
-                                        class="btn-projetos">Ver
-                                        projeto</button>
-                                </ul>
+                           </div>
+                    
+                            <!-- Modal do Carrossel -->
+                            <div class="carousel-overlay" id="carouselOverlay">
+                                <div class="carousel-content">
+                                <span class="close-btn">&times;</span>
+                                <button class="prev-btn">&#10094;</button>
+                                <img src="" alt="Imagem do Projeto" id="carouselImage">
+                                <button class="next-btn">&#10095;</button>
+                                </div>
                             </div>
-                            <!---->
-                            <div class="card-projetos">
-                                <ul>
-                                    <div class="image-container">
-                                        <img
-                                            src="https://images.pexels.com/photos/57007/pexels-photo-57007.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                                            alt> </div>
+                            </div>
 
-                                    <li><span>Nome:</span> Gatinho </li>
-                                    <li><span>data:</span> 19/09/2001</li>
-                                    <li><span>Tecnologia:</span> Html, css,
-                                        javascript</li>
-                                    <button type="button"
-                                        class="btn-projetos">Ver
-                                        projeto</button>
-                                </ul>
+                                 <!-- Modal de Informações -->
+                                    <div class="info-modal" id="infoModal">
+                                        <div class="info-content">
+                                        <span class="close-btn" id="closeInfoModal">&times;</span>
+                                        <h2 id="modalTitle">Título do Projeto</h2>
+                                        <p id="modalDescription">Descrição do projeto.</p>
+                                        <h3>Funcionalidades:</h3>
+                                        <ul id="modalFeatures"></ul>
+                                        </div>
+                                    </div>
                             </div>
-                            <!---->
-                            <div class="card-projetos">
-                                <ul>
-                                    <img
-                                        src="https://images.pexels.com/photos/267350/pexels-photo-267350.jpeg"
-                                        alt>
-                                    <li><span>Nome:</span> Gatinho </li>
-                                    <li><span>data:</span> 19/09/2001</li>
-                                    <li><span>Tecnologia:</span> Html, css,
-                                        javascript</li>
-                                    <button type="button"
-                                        class="btn-projetos">Ver
-                                        projeto</button>
-                                </ul>
-                            </div>
-                        </div>
                         <!--Fim do display-->
                     </div>
+
                 </div>
             </section>
 
